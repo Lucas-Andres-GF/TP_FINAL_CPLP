@@ -1,6 +1,9 @@
-<h1 style= "text-align: center;" > CONCEPTOS Y PARADIGMAS DE LENGUAJES DE PROGRAMACIÓN - TRABAJO FINAL INTEGRADOR 2023 </h1>
+<h1 align="center" > <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" style="width: 50px; height: auto;">TRABAJO FINAL INTEGRADOR <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" style="width: 50px; height: auto;"></h1>
+
+<h4 align="center" > CONCEPTOS Y PARADIGMAS DE LENGUAJES DE PROGRAMACIÓN </h4>
 
 ----
+
 ### Requisitos: 
 - *Este trabajo final es obligatorio para aquellos que quieren promocionar. Puede realizarse en grupos de hasta 2 personas.*
 
