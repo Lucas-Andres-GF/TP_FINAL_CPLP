@@ -27,7 +27,7 @@
 ---- 
 # LENGUAJE DE PROGRAMACIÓN ELEGIDO: 
 
-<img src="https://www.python.org/static/img/python-logo.png">
+<img src="https://www.python.org/static/img/python-logo.png" style="display: block; margin-left: auto; margin-right: auto;">
 
 ---- 
 ## Fuentes y bibliografias: 
