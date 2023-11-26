@@ -27,9 +27,8 @@
 ---- 
 # LENGUAJE DE PROGRAMACIÓN ELEGIDO: 
 
-<div style="text-align: center;">
-    <img src="https://www.python.org/static/img/python-logo.png">
-</div>
+<img src="https://www.python.org/static/img/python-logo.png">
+
 
 ---- 
 ## Fuentes y bibliografias: 
@@ -131,6 +130,7 @@ Para hacer el análisis del lenguaje de programación elegido el cual es Python,
 - *Su semántica operacional*
 
 - *Variables*
+    https://www.aees.gov.in/htmldocs/downloads/XI_Class_Content_Computer_Science/8-Handout.pdf
     nombre
     alcan
     tiempo vid
