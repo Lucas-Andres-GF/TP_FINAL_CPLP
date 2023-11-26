@@ -1,0 +1,33 @@
+- ![Alt text](image.png) Hoja 10 - CRITERIOS PARA EVALUAR LOS LENGUAJES DE PROGRAMACIÓN
+- ![Alt text](image-1.png) Hoja - 26 - SINTAXIS 
+- ![Alt text](image-2.png) Hoja - 27 - SINTAXIS
+- ![Alt text](image-3.png) Hoja - 29 - SINTAXIS, Palabras reservadas
+- ![Alt text](image-4.png) Hoja - 56 - SEMÁNTICA, Error semantico
+- ![Alt text](image-5.png) Hoja - 86 - Interpretación
+- ![Alt text](image-6.png) Hoja - 137 - Cantidad de caracteres en el nombre de un id, caracteres permitidos y case sensitive
+- ![Alt text](image-7.png) Hoja - 145 - Alcance de las variables
+- ![Alt text](image-8.png) Hoja - 149 - CONCEPTOS ASOCIADOS CON EL ALCANCE 
+- ![Alt text](image-9.png) Hoja - 159 - Momento de ligadura
+- ![Alt text](image-10.png) Hoja - 175 - Unidades 
+- ![Alt text](image-11.png) Hoja - 270 - Parametros
+- ![Alt text](image-12.png) Hoja - 283 - Parametros (Resultado de funciones)
+- ![Alt text](image-13.png) Hoja - 299 - Parametros (Datos) 
+- ![Alt text](image-14.png) Hoja - 378 - Lenguaje fuertemente tipado
+- ![Alt text](image-15.png) Hoja - 396 - Asignacion
+- ![Alt text](image-16.png) Hoja - 411 - Selección
+- ![Alt text](image-17.png) Hoja - 412 - Sentencia de seleccion
+- ![Alt text](image-18.png) Hoja - 434 - Sentencia for 
+- ![Alt text](image-19.png) Hoja - 435 - Sentencia for
+- ![Alt text](image-20.png) Hoja - 436 - Sentencia for
+- ![Alt text](image-21.png) Hoja - 437 - Sentencia for
+- ![Alt text](image-22.png) Hoja - 438 - Sentencia for
+- ![Alt text](image-23.png) Hoja - 439 - Sentencia while
+- ![Alt text](image-24.png) Hoja - 440 - Sentencia while
+- ![Alt text](image-25.png) Hoja - 530 - Basado en Scripts
+- ![Alt text](image-26.png) Hoja - 533 - Basado en Scripts
+- ![Alt text](image-27.png) Hoja - 538 - Basado en Scripts
+- ![Alt text](image-28.png) Hoja - 539 - Basado en Scripts
+- ![Alt text](image-29.png) Hoja - 543 - Basado en Scripts
+- ![Alt text](image-30.png) Hoja - 544 - Basado en Scripts
+- ![Alt text](image-31.png) Hoja - 545 - Basado en Scripts
+- ![Alt text](image-32.png) Hoja - 546 - Basado en Scripts
