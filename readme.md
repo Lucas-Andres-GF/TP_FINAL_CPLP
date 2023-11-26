@@ -168,7 +168,7 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
         try:
             file = open('test.txt', 'r')
         except Exception as exception:
-            print("Se atrapo un excepcion.")
+            print("Se atrapo un excepción.")
         ``` 
     
     -  Cláusula Finally
@@ -188,7 +188,7 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
         try:
             print('¡Estoy seguro de que no ocurrirá ninguna excepción!')
         except Exception:
-            print('Hubo una excepcion.')
+            print('Hubo una excepción.')
         else:
             print('Esto sólo se ejecutará si no se produce ninguna excepción. Y un error aquí NO se detectaría.')
         finally:
