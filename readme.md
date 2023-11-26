@@ -114,21 +114,61 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
     
 - #### *Su sintaxis – estructura de un programa, identificadores, operadores, palabras clave y reservadas, comentarios.*
 
+    - Operadores 
+        - Los siguientes tokens son operadores:
+
+            | + | - | * | ** | / | // | % |
+            | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
+            | @ | << | >> | & | \| | ^ | ~ |
+            | < | > | <= | >= | == | != | := |
+        
+    - Palabras claves
+        - Palabras claves reservadas: Los siguientes identificadores se utilizan como palabras reservadas, o palabras clave del idioma, y no pueden utilizarse como identificadores ordinarios. Deben escribirse exactamente como están escritas aquí:
+
+            | False | await | else | import | pass |
+            | :---: | :---: | :---: | :---: | :---: |
+            | None | break | except | in | raise |
+            | True | class | finally | is | return |
+            | and | continue | for | lambda | try |
+            | as | def | from | nonlocal | while |
+            | assert | del | global | not | with |
+            | async | elif | if | or | yield |
+
+        - Palabras claves blandas: Algunos identificadores sólo se reservan en contextos específicos. Estos se conocen como palabras clave blandas.
+
+            | match | case | type | _ |
+            | :---: | :---: | :---: | :---: |
+
+    - Comentarios
+        - Los comentarios comienzan con el carácter # y se extienden hasta el final de la línea física. Un comentario puede aparecer al principio de una línea o después de un espacio en blanco o código, pero no dentro de una cadena literal. Los comentarios son ignorados por el compilador de Python.
+        ```python
+        # Esto es un comentario
+        print("Hello, World!") # Esto es un comentario en línea
+        ```
+
+        - Los comentarios multilínea se usan para documentar cadenas de documentación de módulos, funciones, clases y métodos. El intérprete de Python ignora los comentarios multilínea.
+        ```python	
+        """Este es un comentario multilínea.
+        Son usados para documentar cadenas de documentación de módulos, funciones, clases y métodos.
+        """
+        print("Hello, World!")
+        ```
+ 
 - #### *Su semántica - tipo de traducción Interpretación, Compilación o combinación.*
 
 - #### *Su semántica operacional*
-
-### Links
 
 - #### *Variables*
     - Links
         - https://www.aees.gov.in/htmldocs/downloads/XI_Class_Content_Computer_Science/8-Handout.pdf
         - https://www.learnpython4cbse.com/python-4/3.-python-%3A-variables
+
     Nombre:
     Alcance:
     Tiempo de Vida:
     L-valor:
     R-valor:
+
 - #### *Pilas*
 
 - #### *Parámetros*
