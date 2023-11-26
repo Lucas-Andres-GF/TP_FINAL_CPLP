@@ -24,13 +24,13 @@
 - Indicar como mínimo los siguientes puntos organizados a su criterio:
 
 ---- 
-# LENGUAJE DE PROGRAMACIÓN ELEGIDO: 
+
+## LENGUAJE DE PROGRAMACIÓN ELEGIDO: 
 
 <img src="https://www.python.org/static/img/python-logo.png">
 
-
 ---- 
-## Fuentes y bibliografias: 
+## Fuentes y bibliografías: 
 
 - [Documentation oficial de Python](https://docs.python.org/3/)
 
@@ -39,6 +39,7 @@
 - [Libro "A Byte of Python"](https://python.swaroopch.com/)
 
 ----
+
 ## Parte A: Respecto al análisis del lenguaje de programación elegido tanto original como actualmente. 
 
 ### Enunciado:
@@ -74,34 +75,23 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
 
 ### Implementación y sus alternativas
 
-- #### CPython: 
-    
-    Es la implementación original, y la más mantenida, de Python y está escrita en C. Las nuevas características del lenguaje normalmente aparecen primero aquí.
+- *CPython:* Es la implementación original, y la más mantenida, de Python y está escrita en C. Las nuevas características del lenguaje normalmente aparecen primero aquí.
 
-- #### Jython:
-    
-    Python implementado en Java. Esta implementación puede utilizarse como lenguaje de scripting para aplicaciones Java, o para crear aplicaciones utilizando las bibliotecas de clases Java. También se utiliza a menudo para crear pruebas para bibliotecas Java.
+- *Jython:* Python implementado en Java. Esta implementación puede utilizarse como lenguaje de scripting para aplicaciones Java, o para crear aplicaciones utilizando las bibliotecas de clases Java. También se utiliza a menudo para crear pruebas para bibliotecas Java.
 
-- #### Python for .NET: 
-    
-    Esta implementación, de hecho, usa la implementación CPython, pero es una aplicación .NET gestionada y usa librerías .NET. Ha sido creada por Brian Lloyd.
+- *Python for .NET:* Esta implementación, de hecho, usa la implementación CPython, pero es una aplicación .NET gestionada y usa librerías .NET. Ha sido creada por Brian Lloyd.
 
-- #### IronPython: 
-    
-    Es una implementación alternativa de Python diseñada específicamente para el entorno .NET. A diferencia de Python.NET, IronPython es una implementación completa de Python que genera código de lenguaje intermedio (IL) y compila directamente el código Python en ensamblados .NET. Este proyecto fue creado por Jim Hugunin, quien también es el creador original de Jython. 
+- *IronPython:* Es una implementación alternativa de Python diseñada específicamente para el entorno .NET. A diferencia de Python.NET, IronPython es una implementación completa de Python que genera código de lenguaje intermedio (IL) y compila directamente el código Python en ensamblados .NET. Este proyecto fue creado por Jim Hugunin, quien también es el creador original de Jython. 
 
-- #### PyPy: 
-
-    Es una implementación de Python escrita completamente en Python. Soporta varias características avanzadas que no se encuentran en otras implementaciones como soporte stackless y un compilador Just in Time. Uno de los objetivos del proyecto es fomentar la experimentación con el propio lenguaje facilitando la modificación del intérprete (ya que está escrito en Python).
+- *PyPy:* Es una implementación de Python escrita completamente en Python. Soporta varias características avanzadas que no se encuentran en otras implementaciones como soporte stackless y un compilador Just in Time. Uno de los objetivos del proyecto es fomentar la experimentación con el propio lenguaje facilitando la modificación del intérprete (ya que está escrito en Python).
 
 
 ### Características
-- #### *Introducción del lenguaje de programación seleccionado.*
-
+- *Introducción del lenguaje de programación seleccionado.*
     - Python es un lenguaje de programación potente y fácil de aprender. Tiene estructuras de datos de alto nivel eficientes y un simple pero efectivo sistema de programación orientado a objetos. La elegante sintaxis de Python y su tipado dinámico, junto a su naturaleza interpretada lo convierten en un lenguaje ideal para scripting y desarrollo rápido de aplicaciones en muchas áreas, para la mayoría de plataformas. 
     - El intérprete de Python y la extensa librería estándar se encuentran disponibles y se pueden distribuir libremente, al igual que modulos de terceros, programas, herramientas y documentación. 
 
-- #### *Características*
+- *Características*
     - Simplicidad y legibilidad
         - Es un lenguaje de alto nivel, muy expresivo y legible, con una sintaxis muy clara y fácil de aprender.
 
@@ -113,10 +103,14 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
     - Ortogonalidad
     - Eficiencia
 
-- #### *Paradigma o paradigmas que respeta.*
+- *Paradigma o paradigmas que respeta.*
     - Soporta múltiples paradigmas de programación, incluyendo programación orientada a objetos, programación imperativa (procedimental) y programación funcional.
     
-- #### *Su sintaxis – estructura de un programa, identificadores, operadores, palabras clave y reservadas, comentarios.*
+- *Su sintaxis*
+
+    - estructura de un programa
+
+    - identificadores
 
     - Operadores 
         - Los siguientes tokens son operadores:
@@ -158,11 +152,12 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
         print("Hello, World!")
         ```
  
-- #### *Su semántica - tipo de traducción Interpretación, Compilación o combinación.*
+- *Su semántica*
+    - tipo de traducción Interpretación, Compilación o combinación
 
-- #### *Su semántica operacional*
+- *Su semántica operacional*
 
-- #### *Variables*
+- *Variables*
     - Links
         - https://www.aees.gov.in/htmldocs/downloads/XI_Class_Content_Computer_Science/8-Handout.pdf
         - https://www.learnpython4cbse.com/python-4/3.-python-%3A-variables
@@ -173,13 +168,13 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
     L-valor:
     R-valor:
 
-- #### *Pilas*
+- *Pilas*
 
-- #### *Parámetros*
+- *Parámetros*
 
-- #### *Tipos de datos*
+- *Tipos de datos*
 
-- #### *Excepciones*
+- *Excepciones*
     - En terminología básica conocemos la estructura try/except. El código que puede causar una excepción se coloca en el bloque try y el manejo de la excepción se implementa en el bloque except. El código del bloque except solo se ejecutará si el bloque try se encuentra con una excepción.
         ```python
         try:
@@ -245,7 +240,6 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
         <img src="https://www.maestrosdelweb.com/images/2011/11/chule_exceptions.png">
         
 ---- 
-
 
 
 ## Parte B: Respecto al análisis a realizar con IA. 
