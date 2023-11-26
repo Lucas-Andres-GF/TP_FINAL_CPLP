@@ -136,6 +136,7 @@ Para hacer el análisis del lenguaje de programación elegido el cual es Python,
 - *Excepciones*
 https://www.maestrosdelweb.com/guia-python-excepciones-helpers-refactoring/
 https://ellibrodepython.com/definir-excepcion
+https://docs.python.org/3/library/exceptions.html
 ---- 
 
 
