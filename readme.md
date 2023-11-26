@@ -378,4 +378,4 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
 - *Utilizar dos sistemas de Inteligencia artificial como ChatGPT, GoogleBard, Perplexity, etc y compare los resultados que dan estos motores respecto a lo indicado por Ud. sobre el lenguaje de programación que eligió. Es importante realizar este análisis comparativo entre lo inferido por la IA respecto a lo descripto en la bibliografía tanto de Conceptos de lenguajes como del manual mismo del lenguaje.*
 
 ## Parte C: Conclusiones finales
-- *Incluya conclusiones respecto de las tres perspectivas de análisis solicitadas. Puede agregar aportes de su parte, comentarios, opiniones, críticas, o si se quiere agregar algo más.* asd
+- *Incluya conclusiones respecto de las tres perspectivas de análisis solicitadas. Puede agregar aportes de su parte, comentarios, opiniones, críticas, o si se quiere agregar algo más.* 
