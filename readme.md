@@ -76,18 +76,23 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
 ### Implementación y sus alternativas
 
 - #### CPython: 
+    
     Es la implementación original, y la más mantenida, de Python y está escrita en C. Las nuevas características del lenguaje normalmente aparecen primero aquí.
 
 - #### Jython:
+    
     Python implementado en Java. Esta implementación puede utilizarse como lenguaje de scripting para aplicaciones Java, o para crear aplicaciones utilizando las bibliotecas de clases Java. También se utiliza a menudo para crear pruebas para bibliotecas Java.
 
 - #### Python for .NET: 
+    
     Esta implementación, de hecho, usa la implementación CPython, pero es una aplicación .NET gestionada y usa librerías .NET. Ha sido creada por Brian Lloyd.
 
 - #### IronPython: 
+    
     Es una implementación alternativa de Python diseñada específicamente para el entorno .NET. A diferencia de Python.NET, IronPython es una implementación completa de Python que genera código de lenguaje intermedio (IL) y compila directamente el código Python en ensamblados .NET. Este proyecto fue creado por Jim Hugunin, quien también es el creador original de Jython. 
 
 - #### PyPy: 
+
     Es una implementación de Python escrita completamente en Python. Soporta varias características avanzadas que no se encuentran en otras implementaciones como soporte stackless y un compilador Just in Time. Uno de los objetivos del proyecto es fomentar la experimentación con el propio lenguaje facilitando la modificación del intérprete (ya que está escrito en Python).
 
 
@@ -98,16 +103,16 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
     - El intérprete de Python y la extensa librería estándar se encuentran disponibles y se pueden distribuir libremente, al igual que modulos de terceros, programas, herramientas y documentación. 
 
 - #### *Características*
-    ##### Simplicidad y legibilidad
-    - Es un lenguaje de alto nivel, muy expresivo y legible, con una sintaxis muy clara y fácil de aprender.
+    - Simplicidad y legibilidad
+        - Es un lenguaje de alto nivel, muy expresivo y legible, con una sintaxis muy clara y fácil de aprender.
 
-    ##### Bindings
+    - Bindings
 
-    ##### Confiabilidad
-    ##### Soporte
-    ##### Abstracción
-    ##### Ortogonalidad
-    ##### Eficiencia
+    - Confiabilidad
+    - Soporte
+    - Abstracción
+    - Ortogonalidad
+    - Eficiencia
 
 - #### *Paradigma o paradigmas que respeta.*
     - Soporta múltiples paradigmas de programación, incluyendo programación orientada a objetos, programación imperativa (procedimental) y programación funcional.
