@@ -67,13 +67,13 @@
 Para hacer el análisis del lenguaje de programación elegido el cual es Python, iniciaremos con una descripción del mismo, empezando por su historia, características, paradigmas, sintaxis, semántica, tipos de datos, variables, (TERMINAR)
 
 ### Historia 
-<a href="https://docs.python.org/es/3/license.html">-></a> Python fue creado a principios de la década de 1990 por Guido van Rossum en Stichting Mathematisch Centrum en los Países Bajos como sucesor de un idioma llamado ABC. Guido sigue siendo el autor principal de Python, aunque incluye muchas contribuciones de otros.
+Python fue creado a principios de la década de 1990 por Guido van Rossum en Stichting Mathematisch Centrum en los Países Bajos como sucesor de un idioma llamado ABC. Guido sigue siendo el autor principal de Python, aunque incluye muchas contribuciones de otros.
 
-<a href="https://python.swaroopch.com/about_python.html">-></a>Su nombre se debe al programa de la BBC "Monty Python's Flying Circus"
+Su nombre se debe al programa de la BBC "Monty Python's Flying Circus"
 
-<a href="https://python.swaroopch.com/about_python.html">-></a> Python es un ejemplo de FLOSS (software gratuito y de código abierto). En términos simples, puede distribuir libremente copias de este software, leer su código fuente, realizar cambios y utilizar partes del mismo en nuevos programas gratuitos. FLOSS se basa en el concepto de una comunidad que comparte conocimientos. Esta es una de las razones por las que Python es tan bueno: ha sido creado y mejorado constantemente por una comunidad que solo quiere ver un Python mejor.
+Python es un ejemplo de FLOSS (software gratuito y de código abierto). En términos simples, puede distribuir libremente copias de este software, leer su código fuente, realizar cambios y utilizar partes del mismo en nuevos programas gratuitos. FLOSS se basa en el concepto de una comunidad que comparte conocimientos. Esta es una de las razones por las que Python es tan bueno: ha sido creado y mejorado constantemente por una comunidad que solo quiere ver un Python mejor.
 
-### Implementación y sus alternativas <a href="https://docs.python.org/es/3/reference/introduction.html#alternate-implementations">-></a>
+### Implementación y sus alternativas
 
 - #### CPython: 
     Es la implementación original, y la más mantenida, de Python y está escrita en C. Las nuevas características del lenguaje normalmente aparecen primero aquí.
@@ -93,14 +93,13 @@ Para hacer el análisis del lenguaje de programación elegido el cual es Python,
 
 ### Características
 - *Introducción del lenguaje de programación seleccionado.*
-    - <a href="https://docs.python.org/es/3/tutorial/index.html#tutorial-index">-></a> 
-    Python es un lenguaje de programación potente y fácil de aprender. Tiene estructuras de datos de alto nivel eficientes y un simple pero efectivo sistema de programación orientado a objetos. La elegante sintaxis de Python y su tipado dinámico, junto a su naturaleza interpretada lo convierten en un lenguaje ideal para scripting y desarrollo rápido de aplicaciones en muchas áreas, para la mayoría de plataformas. 
+
+    - Python es un lenguaje de programación potente y fácil de aprender. Tiene estructuras de datos de alto nivel eficientes y un simple pero efectivo sistema de programación orientado a objetos. La elegante sintaxis de Python y su tipado dinámico, junto a su naturaleza interpretada lo convierten en un lenguaje ideal para scripting y desarrollo rápido de aplicaciones en muchas áreas, para la mayoría de plataformas. 
     - El intérprete de Python y la extensa librería estándar se encuentran disponibles y se pueden distribuir libremente, al igual que modulos de terceros, programas, herramientas y documentación. 
 
 - *Características*
     ##### Simplicidad y legibilidad
-    - <a href="https://python-unlp.github.io/2022/01_teorias/clase_01/">-></a> 
-    Es un lenguaje de alto nivel, muy expresivo y legible, con una sintaxis muy clara y fácil de aprender.
+    - Es un lenguaje de alto nivel, muy expresivo y legible, con una sintaxis muy clara y fácil de aprender.
 
     ##### Bindings
 
@@ -110,32 +109,27 @@ Para hacer el análisis del lenguaje de programación elegido el cual es Python,
     ##### Ortogonalidad
     ##### Eficiencia
 
-    ```python
-    def fibonnaci(n):
-        if n == 0:
-            return 0
-        elif n == 1:
-            return 1
-        else:
-            return fibonnaci(n-1) + fibonnaci(n-2)
-    fibonnaci(10)
-    ```
-
 - *Paradigma o paradigmas que respeta.*
-    - <a href="https://docs.python.org/es/3/howto/functional.html?highlight=funcional">-></a>Soporta múltiples paradigmas de programación, incluyendo programación orientada a objetos, programación imperativa (procedimental) y programación funcional.
+    - <a href="https://docs.python.org/es/3/howto/functional.html?highlight=funcional">-></a>
+    Soporta múltiples paradigmas de programación, incluyendo programación orientada a objetos, programación imperativa (procedimental) y programación funcional.
+    
 - *Su sintaxis – estructura de un programa, identificadores, operadores, palabras clave y reservadas, comentarios.*
 
 - *Su semántica - tipo de traducción Interpretación, Compilación o combinación.*
 
 - *Su semántica operacional*
 
+### Links
+
 - *Variables*
-    https://www.aees.gov.in/htmldocs/downloads/XI_Class_Content_Computer_Science/8-Handout.pdf
-    nombre
-    alcan
-    tiempo vid
-    l-valor
-    r-valor
+    ### Links
+    - https://www.aees.gov.in/htmldocs/downloads/XI_Class_Content_Computer_Science/8-Handout.pdf
+    - https://www.learnpython4cbse.com/python-4/3.-python-%3A-variables
+    Nombre:
+    Alcance:
+    Tiempo de Vida:
+    L-valor:
+    R-valor:
 - *Pilas*
 
 - *Parámetros*
@@ -143,9 +137,45 @@ Para hacer el análisis del lenguaje de programación elegido el cual es Python,
 - *Tipos de datos*
 
 - *Excepciones*
-https://www.maestrosdelweb.com/guia-python-excepciones-helpers-refactoring/
-https://ellibrodepython.com/definir-excepcion
-https://docs.python.org/3/library/exceptions.html
+    - En terminología básica conocemos la estructura try/except. El código que puede causar una excepción se coloca en el bloque try y el manejo de la excepción se implementa en el bloque except. El código del bloque except solo se ejecutará si el bloque try se encuentra con una excepción.
+    ```python
+    try:
+        file = open('test.txt', 'rb')
+    except IOError as exeption:
+        print('Ocurrio un IOError. {}'.format(exeption.args[-1]))
+    ```
+    ### Manejo de múltiples excepciones:
+    - Podemos utilizar tres métodos para manejar múltiples excepciones. El primero implica poner todas las excepciones que probablemente ocurran en una tupla.
+    ```python
+    try:
+        file = open('test.txt', 'rb')
+    except (IOError, EOFError) as exeption:
+        print("Ocurrio un error. {}".format(exeption.args[-1]))
+    ```
+    - Otro método consiste en manejar excepciones individuales en bloques except separados. Podemos tener tantos bloques except como queramos.
+    ```python
+    try:
+        file = open('test.txt', 'rb')
+    except EOFError as e:
+        print("An EOF error occurred.")
+        raise e
+    except IOError as e:
+        print("An error occurred.")
+        raise e
+    ```
+    - De esta manera, si la excepción no es manejada por el primer exceptbloque, entonces puede ser manejada por un bloque siguiente, o ninguno en absoluto. Ahora el último método implica atrapar TODAS las excepciones:
+    ```python
+    try:
+        file = open('test.txt', 'rb')
+    except Exception as e:
+        # Some logging if you want
+        raise e
+    ```
+    - Esto puede resultar útil cuando no tiene idea de las excepciones que puede generar su programa. Si solo busca capturar todas las excepciones, pero en realidad no le importa cuáles son, incluso puede excluir la parte.Exception as e
+    ### Cláusula Finally
+    - Envolvemos nuestro código principal en la trycláusula. Después de eso, envolvemos algo de código en una exceptcláusula que se ejecuta si se produce una excepción en el código incluido en la trycláusula. En este ejemplo también usaremos una tercera cláusula, que es la finallycláusula. El código incluido en la finallycláusula se ejecutará independientemente de que se produzca o no una excepción. Podría usarse para realizar una limpieza después de un script. Aquí hay un ejemplo simple:
+    - Muchas veces es posible que deseemos que se ejecute algún código si no se produce ninguna excepción. Esto se puede lograr fácilmente mediante el uso de una elsecláusula. Uno podría preguntarse: ¿por qué, si solo desea que se ejecute algún código si no se produce ninguna excepción, no colocaría simplemente ese código dentro del archivo try? La respuesta es que entonces cualquier excepción en ese código será detectada por el try, y es posible que usted no desee eso. La mayoría de la gente no lo usa y, sinceramente, yo no lo he usado mucho. Aquí hay un ejemplo:
+    - La cláusula else sólo se ejecutará si no se produce ninguna excepción y se ejecutará antes de la cláusula finally.
 ---- 
 
 
