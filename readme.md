@@ -16,7 +16,6 @@
 
 - *La fecha de la exposición y defensa: viernes 1ero de diciembre 8 hs.virtual.*
 
-
 ### Objetivo del trabajo: 
 - Se va a solicitar profundizar sobre las características de un lenguaje de programación a elección, desde tres perspectivas:
     - *Desde su concepción original*
@@ -182,13 +181,14 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
 
 - #### *Excepciones*
     - En terminología básica conocemos la estructura try/except. El código que puede causar una excepción se coloca en el bloque try y el manejo de la excepción se implementa en el bloque except. El código del bloque except solo se ejecutará si el bloque try se encuentra con una excepción.
-    ```python
-    try:
-        file = open('test.txt', 'r')
-        print(file.read())
-    except IOError as exception:
-        print('Ocurrio un IOError. {}'.format(exception.args[-1]))
-    ```
+        ```python
+        try:
+            file = open('test.txt', 'r')
+            print(file.read())
+        except IOError as exception:
+            print('Ocurrio un IOError. {}'.format(exception.args[-1]))
+        ```
+
     - Manejo de múltiples excepciones:
         - El primero implica poner todas las excepciones que probablemente ocurran en una tupla.
         ```python
