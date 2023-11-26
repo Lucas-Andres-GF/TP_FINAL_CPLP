@@ -1,16 +1,26 @@
+# Función de ejemplo: Doble de un número
+def doble(x):
+    return x * 2
 
-match = "Esto es un match variable"
-n = 19
-type=10 
-print(type)
-_ = 0
-print(_)
-match n: 
-    case 42:
-        print("El numero es 42")
-    case 19:
-        print("El numero es 19")
-    case _:
-        print("El numero no es 42 ni 19")
+# Función de ejemplo: Filtrar números pares
+def es_par(x):
+    return x % 2 == 0
 
-print (match)
+# Lista de números
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Utilizando la función map para aplicar la función doble a cada elemento de la lista
+dobles = list(map(doble, numeros))
+print("Dobles:", dobles)
+
+# Utilizando la función filter para obtener los números pares de la lista
+pares = list(filter(es_par, numeros))
+print("Números pares:", pares)
+
+# Utilizando la función lambda con map para duplicar cada elemento de la lista
+dobles_lambda = list(map(lambda x: x * 2, numeros))
+print("Dobles con lambda:", dobles_lambda)
+
+# Utilizando la función lambda con filter para obtener los números pares de la lista
+pares_lambda = list(filter(lambda x: x % 2 == 0, numeros))
+print("Números pares con lambda:", pares_lambda)

@@ -38,6 +38,10 @@
 
 - [Libro "A Byte of Python"](https://python.swaroopch.com/)
 
+- ["Exceptions"](https://book.pythontips.com/en/latest/exceptions.html)
+
+- ["Definiendo Excepciones"](https://ellibrodepython.com/estructuras-control-python)
+
 ----
 
 ## Parte A: Respecto al análisis del lenguaje de programación elegido tanto original como actualmente. 
@@ -92,26 +96,108 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
     - El intérprete de Python y la extensa librería estándar se encuentran disponibles y se pueden distribuir libremente, al igual que modulos de terceros, programas, herramientas y documentación. 
 
 - *Características*
+    - *Comentario de docentes de Cátedra lenguaje Python:*
+        - Python es un lenguaje simple y fácil de enseñar.  Es un lenguaje de tipado dinámico pero es fuertemente tipado,  Es un lenguaje ortogonal porque se pueden combinar sus componentes. Su código es legible, confiable por ser fuertemente tipado y proveer manejo de excepcioenes,
+
     - Simplicidad y legibilidad
         - Es un lenguaje de alto nivel, muy expresivo y legible, con una sintaxis muy clara y fácil de aprender.
 
     - Bindings
+        - Los identificadores se ligan a sus atributos o propiedades en tiempo de ejecución (infiriendo el tipo), por lo tanto posee una ligadura dinámica (binding dinámico), el contenido de una variable puede cambiar durante la ejecución del programa exepto que sea declarada como constante.
+        
+    - Confiabilidad y seguridad
+        - *Cheque de tipos*
+            - Python es de tipado dinámico, por lo tanto el chequeo de tipos se realiza en tiempo de ejecución. en caso de la existencia de un error, se encuentra en tiempo de ejecución, lo que hace que sea más tardío encontrarlo.
+        
+        - *Manejo de excepciones*
+            - Python cuenta con un sistema de manejo de excepciones que permite interceptar errores en tiempo de ejecución, tomar medidas correctivas y continuar con la ejecución del programa. (Mas adelante se explicara con mas detalle). 
 
-    - Confiabilidad
     - Soporte
+        - *"Debería ser accesible para cualquiera que quiera usarlo o instalarlo"*
+            
+            - Python es FLOSS (software libre y de código abierto) por lo tanto se puede distribuir libremente copias, leer su código fuente, realizar cambios y utilizar partes del mismo en nuevos programas gratuitos. El termino FLOSS se basa en el concepto de una comunidad que comparte conocimientos. Esta es una de las razones por las que Python es tan bueno: ha sido creado y mejorado constantemente por una comunidad que solo quiere ver un Python mejor.
+            
+        - *"Lo ideal sería que su compilador o intérprete sea de dominio público"*
+
+            - Al ser un lenguaje de código abierto, su intérprete es de dominio público, por lo que cualquiera puede acceder a el.
+        
+        - *"Deberían existir diferentes medios para poder familiarizarse con el lenguaje"*
+
+            - A lo largo de todo internet se pueden encontrar diferentes medios para poder familiarizarse con el lenguaje, desde la documentacion oficial, cursos gratuitos, cursos pagos, tutoriales, libros, foros, entre otros.            
+
     - Abstracción
+        - Python es un lenguaje de alto nivel (Similar al lenguaje humano), cuenta con multiples funciones y librerias que permiten abstraerse de los detalles de bajo nivel.
+
     - Ortogonalidad
+         - La Ortogonalidad nos permite combinar diferentes elementos de manera independiente y coherente, sin existir restricciones.
+         - Por ejemplo en el caso de Python, mediante el operador "+" podemos concatenar enteros con reales o incluso con Strings sin necesidad de convertir las variables. 
+
+        ```python
+        print(1 + 2) # 3
+        print(1 + 2.0) # 3.0
+        print(1 + "2") # 12
+        ```
+        
+
     - Eficiencia
+        - Tiempo y espacio
+            - Python 
 
 - *Paradigma o paradigmas que respeta.*
-    - Soporta múltiples paradigmas de programación, incluyendo programación orientada a objetos, programación imperativa (procedimental) y programación funcional.
+    Python es un lenguaje de programación multiparadigma, ya que soporta múltiples paradigmas de programación. 
+    
+    - Programación imperativa
+        - Python soporta programación imperativa (listas de instrucciones que le dicen a la computadora qué hacer con la entrada del programa). 
+        ```python
+        # Programación imperativa
+        a = 1 # declaro la variable a = 1
+        b = 2 # declaro la variable b = 2
+        print(a + b) # devuelve 3
+        ```
+
+    - Programación orientada a objetos
+        - Python soporta programación orientada a objetos, ya que permite definir clases, crear objetos, herencia, polimorfismo, etc.
+        ```python
+        class Persona:
+            def __init__(self, nombre, edad):
+                self.nombre = nombre
+                self.edad = edad
+
+            def __str__(self):
+                return "Nombre: " + self.nombre + ", Edad: " + str(self.edad)
+
+        class Empleado(Persona):
+            def __init__(self, nombre, edad, sueldo):
+                super().__init__(nombre, edad)
+                self.sueldo = sueldo
+
+            def __str__(self):
+                return super().__str__() + ", Sueldo: " + str(self.sueldo)
+
+        persona = Persona("Juan", 28)
+        empleado = Empleado("Pedro", 30, 50000)
+
+        print(persona) # Nombre: Juan, Edad: 28
+        print(empleado) # Nombre: Pedro, Edad: 30, Sueldo: 50000
+        ```
+
+        El código anterior muestra un ejemplo de herencia, donde la clase Empleado hereda de la clase Persona, y la clase Empleado sobreescribe el método __str__(Metodo que se ejecuta al hacer un print de un objeto) de la clase Persona.
+    
+    - Programación funcional
+        - Python soporta programación funcional, la idea es descoponer un problema en funciones. idealmente las funciones reciben datos de entrada y devuelven un unico valor de salida, sin producir efectos secundarios sobre otros componentes del programa.
+        ```python
+        # Programación funcional
+        
+        
+
     
 - *Su sintaxis*
 
-    - estructura de un programa
-
-    - identificadores
-
+    - Estructura de un programa
+         - https://docs.python.org/es/3/reference/executionmodel.html#:~:text=4.1.-,Estructura%20de%20un%20programa,y%20una%20definici%C3%B3n%20de%20clase.
+    
+    - Identificadores
+        
     - Operadores 
         - Los siguientes tokens son operadores:
 
@@ -153,20 +239,27 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
         ```
  
 - *Su semántica*
-    - tipo de traducción Interpretación, Compilación o combinación
+    - Tipo de traducción Interpretación, Compilación o combinación.
+        - Python es un lenguaje interpretado, lo que significa que no necesita ser compilado antes de que se ejecute. El intérprete de Python lee y ejecuta el código python directamente. Esto hace que el desarrollo sea muy rápido y cómodo. El intérprete de Python está disponible para la mayoría de las plataformas, incluidas Linux, Mac OS X y Windows.
 
 - *Su semántica operacional*
 
 - *Variables*
-    - Links
-        - https://www.aees.gov.in/htmldocs/downloads/XI_Class_Content_Computer_Science/8-Handout.pdf
-        - https://www.learnpython4cbse.com/python-4/3.-python-%3A-variables
-
-    Nombre:
-    Alcance:
-    Tiempo de Vida:
-    L-valor:
-    R-valor:
+    - Nombre: El nombre de una variable (identificador) debe cumplir ciertas condiciones:
+         - Puede contener solamente letras (mayúsculas y minúsculas), números, y guión bajo; todas las letras deben pertenecer al código de caracteres ASCII básico, y no contener caracteres extendidos.
+         - El primer carácter no puede ser un número.
+         - Las palabras reservadas del lenguaje no pueden usarse como identificadores.
+    - Alcance: En Python, el alcance de una variable se refiere a la región del código en la que la variable es válida y puede ser utilizada. Hay varios tipos de alcance en Python:
+         - Global: Son aquellas definidas en el cuerpo principal del programa fuera de cualquier función. Son accesibles desde cualquier punto del programa, incluso desde dentro de funciones. También se puede acceder a las variables globales de otros programas o módulos importados.
+         - Local: Son aquellas definidas dentro de una función. Solamente son accesibles desde la propia función y dejan de existir cuando esta termina su ejecución.
+         - NonLocal: Son un mecanismo que nos permite hacer acceso de escritura de una variable local desde dentro de otra  función definida en el mismo ámbito, es decir, desde una función anidada.
+         - Module: Es un fichero .py que alberga un conjunto de funciones, variables o clases y que puede ser usado por otros módulos. Nos permiten reutilizar código y organizarlo mejor en namespaces.
+    - Tiempo de Vida: Las variables en python duran el tiempo que siga ejecutandose el modulo que lo contiene.
+    - L-valor: 
+        En python tiene dos tipos de l-valor: 
+            - Automatica: 
+            - Dinamica:
+    - R-valor: La declaración e inicialización se hace en la misma linea, por lo tanto el r-valor es el valor que se le asigna a la variable.
 
 - *Pilas*
 
@@ -236,9 +329,48 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
         ```
         - La cláusula else sólo se ejecutará si no se produce ninguna excepción y se ejecutará antes de la cláusula finally.
 
-    - Algunos tipos de Excepciones del lenguaje    
+    - Algunos tipos de Excepciones del lenguaje
+        - Definidas por el lenguaje:    
         <img src="https://www.maestrosdelweb.com/images/2011/11/chule_exceptions.png">
         
+        - Definidas por el usuario:
+            - A pesar de que Python define un conjunto de excepciones por defecto, podrían no ser suficientes para nuestro programa. En ese caso, deberíamos definir nuestra propias excepciones.
+
+            - Si queremos crear una excepción, solamente tenemos que crear una clase que herede de la clase Exception. Es tan sencillo como el siguiente ejemplo.
+            ```python
+            # Creamos una excepción personalizada
+            class MiExcepcionPersonalizada(Exception):
+                pass
+            ```
+            - Y ya podríamos lanzarla con raise cuando quisiéramos.
+             ```python
+            raise MiExcepcionPersonalizada()
+            ```
+            - También se pueden pasar parámetros de entrada al lanzarla. Esto es muy útil para dar información adicional a la excepción. En el siguiente ejemplo se pasan dos parámetros. Para ello tenemos que modificar la función __init__() de la siguiente manera.
+            ```python
+            # Creamos nuestra propia excepción heredando
+            # de la clase Exception
+            class MiExcepcionPersonalizada(Exception):
+                def __init__(self, parametro1, parametro2):
+                    self.parametro1 = parametro1
+                    self.parametro2 = parametro2
+            ```
+            - Y una vez hemos creado nuestra excepción, podemos lanzarla con raise como ya hemos visto. También es posible acceder a los parámetros pasados como argumentos al lanzar la excepción.
+            ```python
+            # Lanzamos con raise la excepción que hemos creado
+            try:
+                raise MiExcepcionPersonalizada("ValorPar1", "ValorPar2")
+            except MiExcepcionPersonalizada as ex:
+                p1, p2 = ex.args
+                print(type(ex))
+                print("parametro1 =", p1)
+                print("parametro2 =", p2)
+            
+            #<class '__main__.MiExcepcionPersonalizada'>
+            #parametro1 = ValorPar1
+            #parametro2 = ValorPar2
+            ```
+
 ---- 
 
 
