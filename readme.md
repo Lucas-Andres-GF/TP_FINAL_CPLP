@@ -27,7 +27,9 @@
 ---- 
 # LENGUAJE DE PROGRAMACIÓN ELEGIDO: 
 
-<img src="https://www.python.org/static/img/python-logo.png" style="display: block; margin-left: auto; margin-right: auto;">
+<div style="text-align: center;">
+    <img src="https://www.python.org/static/img/python-logo.png" display="block" margin-left=" auto" margin-right="auto">
+</div>
 
 ---- 
 ## Fuentes y bibliografias: 
@@ -129,7 +131,10 @@ Para hacer el análisis del lenguaje de programación elegido el cual es Python,
 - *Su semántica operacional*
 
 - *Variables*
-
+    nombre
+    alcan
+    l-valor
+    r-valor
 - *Pilas*
 
 - *Parámetros*
