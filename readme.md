@@ -28,7 +28,7 @@
 # LENGUAJE DE PROGRAMACIÓN ELEGIDO: 
 
 <div style="text-align: center;">
-    <img src="https://www.python.org/static/img/python-logo.png" display="block" margin-left=" auto" margin-right="auto">
+    <img src="https://www.python.org/static/img/python-logo.png">
 </div>
 
 ---- 
@@ -133,6 +133,7 @@ Para hacer el análisis del lenguaje de programación elegido el cual es Python,
 - *Variables*
     nombre
     alcan
+    tiempo vid
     l-valor
     r-valor
 - *Pilas*
