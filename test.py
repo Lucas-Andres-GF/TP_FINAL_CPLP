@@ -1,6 +1,4 @@
 try:
-    file = open('test.txt', 'rb')
-except EOFError as e:
-    print("Ocurrio un error EOF.")
-except IOError as e:
-    print("Ocurrio un error IO.")
+    file = open('test.txt', 'r')
+except Exception as e:
+    print("Ocurrio un error, se atropo un excepción.")
