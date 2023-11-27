@@ -184,13 +184,125 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
         El código anterior muestra un ejemplo de herencia, donde la clase Empleado hereda de la clase Persona, y la clase Empleado sobreescribe el método __str__(Metodo que se ejecuta al hacer un print de un objeto) de la clase Persona.
     
     - Programación funcional
-        - Python soporta programación funcional, la idea es descoponer un problema en funciones. idealmente las funciones reciben datos de entrada y devuelven un unico valor de salida, sin producir efectos secundarios sobre otros componentes del programa.
-        ```python
-        # Programación funcional
+        - Python soporta programación funcional, la idea es descoponer un problema en funciones. idealmente las funciones reciben datos de entrada y devuelven un unico valor de salida, sin producir efectos secundarios sobre otros componentes del programa. A pesar de que Python no es un lenguaje puramente funcional, nos ofrece algunas primitivas propias de lenguajes funcionales, como map, filter y reduce.
         
-        
+        - *Función map* toma dos entradas:
+            - Una lista o iterable que será modificado en una nueva.
+            - Una función, que será aplicada a cada uno de los elementos de la lista o iterable anterior.
+            Nos devuelve una nueva lista donde todos y cada uno de los elementos de la lista original han sido pasados por la función.
 
+            map(funcion_a_aplicar, entrada_iterable)
+            Imaginemos que queremos multiplicar por dos todos los elementos de una lista. La primera forma que se nos podría ocurrir sería la siguiente. 
+
+            ```python
+            lista = [1, 2, 3, 4, 5]
+            lista_pordos = []
+            for l in lista:
+                lista_pordos.append(l*2)
+
+            print(lista_pordos)
+            # [2, 4, 6, 8, 10]
+            ```
+
+            Pero veamos como darle un enfoque funcional. Podemos definir una función por_dos, que pasaremos a map junto con nuestra lista inicial.
+
+            ```python
+            lista = [1, 2, 3, 4, 5]
+
+            def por_dos(x):
+                return x * 2
+
+            lista_pordos = map(por_dos, lista)
+
+            print(list(lista_pordos))
+            # [2, 4, 6, 8, 10]
+            ```
+
+            es posible usar funciones lambda para compactar un poco el código, quedando lo siguiente:
+                
+            ```python
+            lista = [1, 2, 3, 4, 5]
+            lista_pordos = map(lambda x: 2*x, lista)
+            print(list(lista_pordos))
+            # [2, 4, 6, 8, 10]
+            ```	
+
+        - *La función filter* recibe: 
+            - Una función. 
+            - Una lista pero el resultado es la lista inicial filtrada. Es decir, se pasa cada elemento de la lista por la función, y sólo si su resultado es True, se incluye en la nueva lista.
+
+            filter(funcion_filtrar, entrada_iterable)
+            Al igual que hacíamos antes, usamos las funciones lambda que nos permiten declarar y asignar una función en la misma línea de código.
+
+            ```python
+            lista = [7, 4, 16, 3, 8]
+            pares = filter(lambda x: x % 2 == 0, lista)
+            print(list(pares))
+            # [4, 16, 8] 
+            ```	
+
+            Nótese que el siguiente código sería equivalente:
+            
+            ```python
+            lista = [7, 4, 16, 3, 8]
+            def es_par(x):
+                return x % 2 == 0
+            pares = filter(es_par, lista)
+            print(list(pares))
+            # [4, 16, 8]
+            ```            
+
+            Una vez más, resaltar que no estamos usando bucles. Simplemente damos la entrada y la función a aplicar a cada elemento, y filter se encarga del resto. Esta es una de las características clave de la programación funcional. Se centra más en el qué hacer que en el cómo hacerlo. Para ello se usan funciones predefinidas como las que estamos viendo, a las que sólo tenemos que pasar las entradas y hacer el trabajo por nosotros.
     
+        - La función reduce:
+            - Podemos usar reduce para reducir todos los elementos de la entrada a un único valor aplicando un determinado criterio. Por ejemplo, podemos sumar todos los elementos de una lista de la siguiente manera.
+
+            ```python
+            from functools import reduce
+            lista = [1, 2, 3, 4, 5]
+            suma = reduce(lambda acc, val: acc + val, lista) # acc es el acumulador, val es el valor
+            print(suma) # 15
+            ```
+
+            Lo que podría reescribirse usando la función add:
+
+            ```python
+            from operator import add
+            from functools import reduce
+            lista = [1, 2, 3, 4, 5]
+            suma = reduce(add, lista)
+            print(suma) # 15
+            ```
+
+            O también los podemos multiplicar, modificando la función lambda.
+
+            ```python
+            from functools import reduce
+            lista = [1, 2, 3, 4, 5]
+            multiplicacion = reduce(lambda acc, val: acc * val, lista)
+            print(multiplicacion) # 120
+            ```
+
+            - Es importante notar que la función recibe dos argumentos: el acumulador y cada uno de los valores de la lista.
+
+                - El acumulador es el valor devuelto en la iteración anterior, que va acumulando un resultado hasta que llegamos al final.
+                - El valor es cada uno de los elementos de nuestra lista, que en nuestro caso vamos añadiendo al acumulador.
+            
+            El uso de reduce es especialmente útil cuando tenemos por ejemplo una lista de diccionarios y queremos sumar todos los valores de un campo en concreto. Veamos un ejemplo donde calculamos la edad media de varias personas.
+                
+            ```python
+            from functools import reduce
+            personas = [
+                {'Nombre': 'Alicia', 'Edad': 22},
+                {'Nombre': 'Bob', 'Edad': 29},
+                {'Nombre': 'Charlie', 'Edad': 33}
+            ]
+            suma_edad = reduce(lambda total, p: total + p['Edad'], personas, 0)
+            print(suma_edad/len(personas)) # 28.0
+            ```
+
+            Nótese que llamamos a reduce con un valor adicional 0, que es el valor inicial del acumulador. Una vez más, hemos resuelto un problema en el que tradicionalmente usaríamos bucles con las primitivas de la programación funcional.
+            
 - *Su sintaxis*
 
     - Estructura de un programa
