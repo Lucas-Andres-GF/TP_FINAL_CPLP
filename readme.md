@@ -42,6 +42,8 @@
 
 - ["Definiendo Excepciones"](https://ellibrodepython.com/estructuras-control-python)
 
+- ["El Libro de Python"](https://ellibrodepython.com/)
+
 ----
 
 ## Parte A: Respecto al análisis del lenguaje de programación elegido tanto original como actualmente. 
@@ -184,7 +186,7 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
         El código anterior muestra un ejemplo de herencia, donde la clase Empleado hereda de la clase Persona, y la clase Empleado sobreescribe el método __str__(Metodo que se ejecuta al hacer un print de un objeto) de la clase Persona.
     
     - Programación funcional
-        - Python soporta programación funcional, la idea es descoponer un problema en funciones. idealmente las funciones reciben datos de entrada y devuelven un unico valor de salida, sin producir efectos secundarios sobre otros componentes del programa. A pesar de que Python no es un lenguaje puramente funcional, nos ofrece algunas primitivas propias de lenguajes funcionales, como map, filter y reduce.
+        - Python soporta programación funcional, la idea es descoponer un problema en funciones. La programación funcional prefiere también las funciones puras, es decir, funciones sin side effects (Efectos secundarios o laterales), Las funciones puras no dependen de variables externas o globales. Esto significa que para las mismas entradas, siempre se producen las mismas salidas. sin producir efectos secundarios sobre otros componentes del programa. Python nos ofrece algunas funciones primitivas propias de lenguajes funcionales, como map, filter y reduce.
         
         - *Función map* toma dos entradas:
             - Una lista o iterable que será modificado en una nueva.
@@ -254,7 +256,7 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
 
             Una vez más, resaltar que no estamos usando bucles. Simplemente damos la entrada y la función a aplicar a cada elemento, y filter se encarga del resto. Esta es una de las características clave de la programación funcional. Se centra más en el qué hacer que en el cómo hacerlo. Para ello se usan funciones predefinidas como las que estamos viendo, a las que sólo tenemos que pasar las entradas y hacer el trabajo por nosotros.
     
-        - La función reduce:
+        - *La función reduce*:
             - Podemos usar reduce para reducir todos los elementos de la entrada a un único valor aplicando un determinado criterio. Por ejemplo, podemos sumar todos los elementos de una lista de la siguiente manera.
 
             ```python
@@ -306,10 +308,69 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
 - *Su sintaxis*
 
     - Estructura de un programa
-         - https://docs.python.org/es/3/reference/executionmodel.html#:~:text=4.1.-,Estructura%20de%20un%20programa,y%20una%20definici%C3%B3n%20de%20clase.
-    
-    - Identificadores
+
+        - Para definir la estructura de un programa en Python, debemos conocer los bloques de codigo más comunes, siendo las funciones, clases y modulos. 
+
+        - Como sabemos Python es un lenguaje interpretado, el intérprete de Python lee y ejecuta el código python directamente, de ser necesario las cleses, modulos y funciones se declaran antes de ser utilizadas. 
+
+        ```python
+        # Definicion de una clase
+        class Persona:
+            def __init__(self, nombre, edad):
+                self.nombre = nombre
+                self.edad = edad
+
+            def __str__(self):
+                return "Nombre: " + self.nombre + ", Edad: " + str(self.edad)
         
+        # Definicion de una funcion
+        def funcion1():
+            print("funcion1")
+        
+        # Programa principal
+        persona = Persona("Juan", 28)
+        print(persona) # Nombre: Juan, Edad: 28
+        funcion1() # funcion1
+        ```
+
+        - Si se declaran 2 funciones con el mismo nombre, la ultima declarada sera la que se ejecute.
+        ```python	
+        def funcion1():
+            print("funcion1")
+        
+        def funcion1():
+            print("funcion1 modificada")
+        
+        funcion1() # funcion1 modificada
+        ```
+        
+        - Los import se realizan al principio del archivo, y se pueden importar modulos, clases o funciones. 
+
+        ```python
+        import math # importo el modulo math
+        print(math.pi) # 3.141592653589793
+        ```
+        
+    - Identificadores
+
+        - Un identificador de Python es un nombre utilizado para identificar una variable, función, clase, módulo u otro objeto. 
+        
+        - Un identificador comienza con una letra de la A a la Z o de la a a la z o un guión bajo (_) seguido de cero o más letras, guiones bajos y dígitos (0 a 9).
+
+        - Python no permite caracteres de puntuación como @, $ y % dentro de los identificadores.
+
+        - Python es un lenguaje de programación que distingue entre mayúsculas y minúsculas (case-sensitive), Por lo tanto, Manpower y manpower son dos identificadores diferentes en Python.
+
+        - Convenciones de nomenclatura para identificadores de Python:
+
+            - Los nombres de las clases de Python comienzan con una letra mayúscula. Todos los demás identificadores comienzan con una letra minúscula.
+
+            - Comenzar un identificador con un único guión bajo indica que el identificador es privado.
+
+            - Comenzar un identificador con dos guiones bajos indica un identificador fuertemente privado.
+
+            - Si el identificador también termina con dos guiones bajos al final, el identificador es un nombre especial definido por el idioma.(dunders)
+
     - Operadores 
         - Los siguientes tokens son operadores:
 
