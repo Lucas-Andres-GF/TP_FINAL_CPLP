@@ -415,6 +415,17 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
     - Tipo de traducción Interpretación, Compilación o combinación.
         - Python es un lenguaje interpretado, lo que significa que no necesita ser compilado antes de que se ejecute. El intérprete de Python lee y ejecuta el código python directamente. Esto hace que el desarrollo sea muy rápido y cómodo. El intérprete de Python está disponible para la mayoría de las plataformas, incluidas Linux, Mac OS X y Windows.
 
+        - El proceso que realiza cuando se ejecuta sobre cada una de las sentencias del programa es el siguiente:
+            ![Alt text](/screenshots/image.png)
+
+        - Sólo pasa por ciertas instrucciones no por todas, según sea la ejecución. 
+
+        - Por cada posible acción hay un subprograma en lenguaje de máquina que ejecuta esa acción.
+        
+        - La interpretación se realiza llamando a estos subprogramas en la secuencia adecuada hasta generar el resultado de la ejecucon.
+            ![Alt text](/screenshots/image2.png)
+
+
 - *Su semántica operacional*
 
 - *Variables*
