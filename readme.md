@@ -12,7 +12,7 @@
 ### Presentación:
 - *El trabajo debe subirse a la plataforma, en el módulo Trabajo Final Integrador y debe exponerse oralmente.*
 
-- *La fecha de entrega del trabajo final es: 27 de noviembre*
+- *La fecha de entrega del trabajo final es: 30 de noviembre*
 
 - *La fecha de la exposición y defensa: viernes 1ero de diciembre 8 hs.virtual.*
 
@@ -30,6 +30,7 @@
 <img src="https://www.python.org/static/img/python-logo.png">
 
 ---- 
+
 ## Fuentes y bibliografías: 
 
 - [Documentation oficial de Python](https://docs.python.org/3/)
@@ -416,7 +417,7 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
         - Python es un lenguaje interpretado, lo que significa que no necesita ser compilado antes de que se ejecute. El intérprete de Python lee y ejecuta el código python directamente. Esto hace que el desarrollo sea muy rápido y cómodo. El intérprete de Python está disponible para la mayoría de las plataformas, incluidas Linux, Mac OS X y Windows.
 
         - El proceso que realiza cuando se ejecuta sobre cada una de las sentencias del programa es el siguiente:
-        
+
             ![Alt text](/screenshots/image.png)
 
         - Sólo pasa por ciertas instrucciones no por todas, según sea la ejecución. 
@@ -452,6 +453,43 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
 - *Parámetros*
 
 - *Tipos de datos*
+    - Podemos definir a un tipo de dato como un conjunto de valores  y  un conjunto de operaciones que se pueden utilizar para manipularlos. 
+
+    - Tipo de datos predefinidos (built-in/primitivos)
+        - Normalmente reflejan  el  comportamiento  del  hardware  subyacente. 
+
+        - Las ventajas de los tipos predefinidos son:
+            - Invisibilidad de la representación
+            - Verificación estática
+            - Desambiaguar operadores
+            - Control de precisión
+
+        - Python cuenta con los siguientes tipos primitivos: 
+            - Numeric(numerico) - int, float, complex
+            - String(cadena) - str
+            - Boolean - bool            
+            - Binary(binario) - bytes, bytearray, memoryview            
+            - None - NoneType 
+
+    - Tipo de datos definidos por el programador (user-defined)
+        - Permiten al  programador especificar agrupaciones de objetos de datos elementales ( tipos  predefinidos ).  
+
+        - Separan la especificación de la implementación. Se definen  los tipos que el problema necesita. 
+            - Definir nuevos tipos e instanciarlos
+            - Chequeo de consistencia
+
+        - Las ventajas de los tipos definidos por el programador son:
+            - Legibilidad : elección apropiada de nuevos Nombres. 
+            - Estructura jerárquica de las definiciones de tipos: proceso de refinamiento (creacion de clases). 
+            - Modificabilidad : Solo se cambia en la definición. 
+            - Factorización: Se usa la cantidad de veces necesarias. 
+            - La instanciación de los objetos en un tipo dado implica una descripción abstracta de sus valores. Los detalles de la implementación solo quedan en la definición del tipo. 
+
+        - Python cuenta con los siguientes tipos de datos definidos por el programador:
+            - Sequence(secuencia) - list, tuple, range
+            - Mapping(Mapeo) - dict
+            - Set(conjuntos) - set, frozenset
+            - Objets(objetos) - class
 
 - *Excepciones*
     - En terminología básica conocemos la estructura try/except. El código que puede causar una excepción se coloca en el bloque try y el manejo de la excepción se implementa en el bloque except. El código del bloque except solo se ejecutará si el bloque try se encuentra con una excepción.
