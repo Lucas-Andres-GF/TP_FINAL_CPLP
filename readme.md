@@ -98,40 +98,40 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
 ### Características
 - *Introducción del lenguaje de programación seleccionado.*
     - Python es un lenguaje de programación potente y fácil de aprender. Tiene estructuras de datos de alto nivel eficientes y un simple pero efectivo sistema de programación orientado a objetos. La elegante sintaxis de Python y su tipado dinámico, junto a su naturaleza interpretada lo convierten en un lenguaje ideal para scripting y desarrollo rápido de aplicaciones en muchas áreas, para la mayoría de plataformas. 
-    - El intérprete de Python y la extensa librería estándar se encuentran disponibles y se pueden distribuir libremente, al igual que modulos de terceros, programas, herramientas y documentación. 
+    - El intérprete de Python y la extensa librería estándar se encuentran disponibles y se pueden distribuir libremente, al igual que módulos de terceros, programas, herramientas y documentación. 
 
 - *Características*
     - *Comentario de docentes de Cátedra lenguaje Python:*
-        - Python es un lenguaje simple y fácil de enseñar.  Es un lenguaje de tipado dinámico pero es fuertemente tipado,  Es un lenguaje ortogonal porque se pueden combinar sus componentes. Su código es legible, confiable por ser fuertemente tipado y proveer manejo de excepcioenes,
+        - Python es un lenguaje simple y fácil de enseñar.  Es un lenguaje de tipado dinámico pero es fuertemente tipado,  Es un lenguaje ortogonal porque se pueden combinar sus componentes. Su código es legible, confiable por ser fuertemente tipado y proveer manejo de excepciones. 
 
     - Simplicidad y legibilidad
         - Es un lenguaje de alto nivel, muy expresivo y legible, con una sintaxis muy clara y fácil de aprender.
 
     - Bindings
-        - Los identificadores se ligan a sus atributos o propiedades en tiempo de ejecución (infiriendo el tipo), por lo tanto posee una ligadura dinámica (binding dinámico), el contenido de una variable puede cambiar durante la ejecución del programa exepto que sea declarada como constante.
+        - Los identificadores se ligan a sus atributos o propiedades en tiempo de ejecución (infiriendo el tipo), por lo tanto posee una ligadura dinámica (binding dinámico), el contenido de una variable puede cambiar durante la ejecución del programa excepto que sea declarada como constante.
         
     - Confiabilidad y seguridad
-        - *Cheque de tipos*
-            - Python es de tipado dinámico, por lo tanto el chequeo de tipos se realiza en tiempo de ejecución. en caso de la existencia de un error, se encuentra en tiempo de ejecución, lo que hace que sea más tardío encontrarlo.
+        - *Chequeo de tipos*
+            - Python es de tipado dinámico, por lo tanto el chequeo de tipos se realiza en tiempo de ejecución. En caso de la existencia de un error, se encuentra en tiempo de ejecución, lo que hace que sea más tardío encontrarlo.
         
         - *Manejo de excepciones*
-            - Python cuenta con un sistema de manejo de excepciones que permite interceptar errores en tiempo de ejecución, tomar medidas correctivas y continuar con la ejecución del programa. (Mas adelante se explicara con mas detalle). 
+            - Python cuenta con un sistema de manejo de excepciones que permite interceptar errores en tiempo de ejecución, tomar medidas correctivas y continuar con la ejecución del programa. (Más adelante se explicará con más detalle). 
 
     - Soporte
         - *"Debería ser accesible para cualquiera que quiera usarlo o instalarlo"*
             
-            - Python es FLOSS (software libre y de código abierto) por lo tanto se puede distribuir libremente copias, leer su código fuente, realizar cambios y utilizar partes del mismo en nuevos programas gratuitos. El termino FLOSS se basa en el concepto de una comunidad que comparte conocimientos. Esta es una de las razones por las que Python es tan bueno: ha sido creado y mejorado constantemente por una comunidad que solo quiere ver un Python mejor.
+            - Python es FLOSS (software libre y de código abierto) por lo tanto se puede distribuir libremente copias, leer su código fuente, realizar cambios y utilizar partes del mismo en nuevos programas gratuitos. El término FLOSS se basa en el concepto de una comunidad que comparte conocimientos. Esta es una de las razones por las que Python es tan bueno: ha sido creado y mejorado constantemente por una comunidad que solo quiere ver un Python mejor.
             
         - *"Lo ideal sería que su compilador o intérprete sea de dominio público"*
 
-            - Al ser un lenguaje de código abierto, su intérprete es de dominio público, por lo que cualquiera puede acceder a el.
+            - Al ser un lenguaje de código abierto, su intérprete es de dominio público, por lo que cualquiera puede acceder a él.
         
         - *"Deberían existir diferentes medios para poder familiarizarse con el lenguaje"*
 
-            - A lo largo de todo internet se pueden encontrar diferentes medios para poder familiarizarse con el lenguaje, desde la documentacion oficial, cursos gratuitos, cursos pagos, tutoriales, libros, foros, entre otros.            
+            - A lo largo de todo internet se pueden encontrar diferentes medios para poder familiarizarse con el lenguaje, desde la documentación oficial, cursos gratuitos, cursos pagos, tutoriales, libros, foros, entre otros.            
 
     - Abstracción
-        - Python es un lenguaje de alto nivel (Similar al lenguaje humano), cuenta con multiples funciones y librerias que permiten abstraerse de los detalles de bajo nivel.
+        - Python es un lenguaje de alto nivel (similar al lenguaje humano), cuenta con múltiples funciones y librerías que permiten abstraerse de los detalles de bajo nivel.
 
     - Ortogonalidad
          - La Ortogonalidad nos permite combinar diferentes elementos de manera independiente y coherente, sin existir restricciones.
@@ -186,10 +186,10 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
         print(empleado) # Nombre: Pedro, Edad: 30, Sueldo: 50000
         ```
 
-        El código anterior muestra un ejemplo de herencia, donde la clase Empleado hereda de la clase Persona, y la clase Empleado sobreescribe el método __str__(Metodo que se ejecuta al hacer un print de un objeto) de la clase Persona.
+        El código anterior muestra un ejemplo de herencia, donde la clase Empleado hereda de la clase Persona, y la clase Empleado sobreescribe el método __str__(Método que se ejecuta al hacer un print de un objeto) de la clase Persona.
     
     - Programación funcional
-        - Python soporta programación funcional, la idea es descoponer un problema en funciones. La programación funcional prefiere también las funciones puras, es decir, funciones sin side effects (Efectos secundarios o laterales), Las funciones puras no dependen de variables externas o globales. Esto significa que para las mismas entradas, siempre se producen las mismas salidas. sin producir efectos secundarios sobre otros componentes del programa. Python nos ofrece algunas funciones primitivas propias de lenguajes funcionales, como map, filter y reduce.
+        - Python soporta programación funcional, la idea es descomponer un problema en funciones. La programación funcional prefiere también las funciones puras, es decir, funciones sin side effects (Efectos secundarios o laterales), Las funciones puras no dependen de variables externas o globales. Esto significa que para las mismas entradas, siempre se producen las mismas salidas. sin producir efectos secundarios sobre otros componentes del programa. Python nos ofrece algunas funciones primitivas propias de lenguajes funcionales, como map, filter y reduce.
         
         - *Función map* toma dos entradas:
             - Una lista o iterable que será modificado en una nueva.
@@ -312,9 +312,9 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
 
     - Estructura de un programa
 
-        - Para definir la estructura de un programa en Python, debemos conocer los bloques de codigo más comunes, siendo las funciones, clases y modulos. 
+        - Para definir la estructura de un programa en Python, debemos conocer los bloques de código más comunes, siendo las funciones, clases y módulos. 
 
-        - Como sabemos Python es un lenguaje interpretado, el intérprete de Python lee y ejecuta el código python directamente, de ser necesario las cleses, modulos y funciones se declaran antes de ser utilizadas. 
+        - Como sabemos Python es un lenguaje interpretado, el intérprete de Python lee y ejecuta el código python directamente, de ser necesario las clases, módulos y funciones se declaran antes de ser utilizadas. 
 
         ```python
         # Definicion de una clase
@@ -347,7 +347,7 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
         funcion1() # funcion1 modificada
         ```
         
-        - Los import se realizan al principio del archivo, y se pueden importar modulos, clases o funciones. 
+        - Los import se realizan al principio del archivo, y se pueden importar módulos, clases o funciones. 
 
         ```python
         import math # importo el modulo math
@@ -422,11 +422,11 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
 
             ![Alt text](/screenshots/image.png)
 
-        - Sólo pasa por ciertas instrucciones no por todas, según sea la ejecución. 
+        - Sólo pasa por ciertas instrucciones, no por todas, según sea la ejecución. 
 
         - Por cada posible acción hay un subprograma en lenguaje de máquina que ejecuta esa acción.
         
-        - La interpretación se realiza llamando a estos subprogramas en la secuencia adecuada hasta generar el resultado de la ejecucon.
+        - La interpretación se realiza llamando a estos subprogramas en la secuencia adecuada hasta generar el resultado de la ejecución.
 
             ![Alt text](/screenshots/image2.png)
 
@@ -443,12 +443,12 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
          - Local: Son aquellas definidas dentro de una función. Solamente son accesibles desde la propia función y dejan de existir cuando esta termina su ejecución.
          - NonLocal: Son un mecanismo que nos permite hacer acceso de escritura de una variable local desde dentro de otra  función definida en el mismo ámbito, es decir, desde una función anidada.
          - Module: Es un fichero .py que alberga un conjunto de funciones, variables o clases y que puede ser usado por otros módulos. Nos permiten reutilizar código y organizarlo mejor en namespaces.
-    - Tiempo de Vida: Las variables en python duran el tiempo que siga ejecutandose el modulo que lo contiene.
+    - Tiempo de Vida: Las variables en python duran el tiempo que siga ejecutándose el módulo que lo contiene.
     - L-valor: 
-        En python tiene dos tipos de l-valor: 
-            - Automatica: 
-            - Dinamica:
-    - R-valor: La declaración e inicialización se hace en la misma linea, por lo tanto el r-valor es el valor que se le asigna a la variable.
+        - En python tiene dos tipos de l-valor: 
+            - Automática: 
+            - Dinámica:
+    - R-valor: La declaración e inicialización se hace en la misma línea, por lo tanto el r-valor es el valor que se le asigna a la variable.
 
 - *Pilas*
     - ¿Qué es la pila?
@@ -512,7 +512,7 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
 
 - *Parámetros*
     
-    - Python Envía objetos que pueden ser “inmutables” o “mutables” (objeto que pueden ser o no modificados). Si es inmutable actuará  como por valor y, si es mutable, ejemplo: listas, no se hace una copia, sino que se trabaja sobre él.
+    - Python envía objetos que pueden ser “inmutables” o “mutables” (objeto que pueden ser o no modificados). Si es inmutable actuará  como por valor y, si es mutable, ejemplo: listas, no se hace una copia, sino que se trabaja sobre él.
 
     Dependiendo del tipo de dato que enviemos a la función, podemos diferenciar dos comportamientos:
 
@@ -585,7 +585,7 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
             - Control de precisión
 
         - Python cuenta con los siguientes tipos primitivos: 
-            - Numeric(numerico) - int, float, complex
+            - Numeric(numérico) - int, float, complex
             - String(cadena) - str
             - Boolean - bool            
             - Binary(binario) - bytes, bytearray, memoryview            
@@ -600,7 +600,7 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
 
         - Las ventajas de los tipos definidos por el programador son:
             - Legibilidad : elección apropiada de nuevos Nombres. 
-            - Estructura jerárquica de las definiciones de tipos: proceso de refinamiento (creacion de clases). 
+            - Estructura jerárquica de las definiciones de tipos: proceso de refinamiento (creación de clases). 
             - Modificabilidad : Solo se cambia en la definición. 
             - Factorización: Se usa la cantidad de veces necesarias. 
             - La instanciación de los objetos en un tipo dado implica una descripción abstracta de sus valores. Los detalles de la implementación solo quedan en la definición del tipo. 
@@ -721,7 +721,6 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
 ## Parte B: Respecto al análisis a realizar con IA. 
 - *Utilizar dos sistemas de Inteligencia artificial como ChatGPT, GoogleBard, Perplexity, etc y compare los resultados que dan estos motores respecto a lo indicado por Ud. sobre el lenguaje de programación que eligió. Es importante realizar este análisis comparativo entre lo inferido por la IA respecto a lo descripto en la bibliografía tanto de Conceptos de lenguajes como del manual mismo del lenguaje.*
 
-### Historia
 |Tema |ChatGPT|GoogleBard| Perplexity|
 |:---:|:---:|:---:|:---:|
 |Historia| Python fue creado por Guido van Rossum y lanzado por primera vez en 1991. Van Rossum buscaba un lenguaje de programación de fácil lectura y con una sintaxis clara. Python ha evolucionado a lo largo de los años, siendo Python 2 y Python 3 las principales versiones. Es conocido por su versatilidad, legibilidad y amplio uso en áreas como desarrollo web, inteligencia artificial y análisis de datos.| Python fue creado por Guido van Rossum en 1989 como un lenguaje de programación de alto nivel, interpretado y de propósito general. El objetivo de van Rossum era crear un lenguaje que fuera fácil de aprender y usar, y que fuera lo suficientemente potente para una amplia gama de aplicaciones.La primera versión de Python, 0.9.0, se lanzó en 1991. La versión 1.0 se lanzó en 1994, y la versión 2.0 se lanzó en 2000. La versión 3.0, que introdujo una serie de cambios importantes en la sintaxis y la semántica de Python, se lanzó en 2008.| Python ha ganado una gran popularidad en los últimos años, convirtiéndose en uno de los lenguajes de programación más utilizados en el mundo. Se utiliza para una amplia gama de aplicaciones, incluyendo desarrollo web, ciencia de datos, machine learning, inteligencia artificial, automatización y videojuegos.La historia del lenguaje de programación Python se remonta a finales de los 80 y principios de los 90. Fue desarrollado por Guido van Rossum, quien comenzó su implementación en diciembre de 1989 en CWI en los Países Bajos. Python fue concebido como un sucesor de ABC capaz de manejo de excepciones e interacción con el sistema operativo Amoeba.Desde entonces, ha experimentado varias actualizaciones y se ha convertido en uno de los lenguajes de programación más populares del mundo.|
@@ -755,9 +754,9 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
 |Excepciones|En Python, las excepciones son eventos que interrumpen el flujo normal de ejecución del programa cuando ocurre un error. Utilizando bloques try-except, los programadores pueden manejar estas excepciones de manera controlada, permitiendo la ejecución de código específico en caso de fallo. Python proporciona una variedad de excepciones incorporadas, como ValueError o FileNotFoundError, y permite la creación de excepciones personalizadas. El manejo de excepciones mejora la robustez del código, facilitando la identificación y gestión de errores de manera estructurada y evitando la terminación abrupta del programa.|En Python, las excepciones son objetos que representan un error que ocurre durante la ejecución de un programa. Las excepciones se pueden utilizar para controlar el flujo de ejecución del programa y para proporcionar información sobre el error que ocurrió.Las excepciones se pueden tratar mediante la instrucción try-except. La instrucción try ejecuta un bloque de código que puede generar una excepción. La instrucción except se ejecuta si se produce una excepción.Las excepciones son una herramienta importante para la programación en Python. Permiten que los programas sean más robustos y fáciles de depurar. |Las excepciones en Python son eventos que ocurren durante la ejecución de un programa y que interrumpen su flujo normal. Estas excepciones pueden ser causadas por errores de sintaxis, errores de tiempo de ejecución o errores de lógica, entre otros. Python proporciona un mecanismo para manejar estas excepciones, lo que permite al programador controlar el comportamiento del programa en caso de que se produzca una excepción. El manejo de excepciones en Python se realiza mediante la utilización de bloques try-except, que permiten capturar y manejar las excepciones que se produzcan durante la ejecución del programa
  |
 
-### Implementación y sus alternativas
-
-### Características
-
 ## Parte C: Conclusiones finales
 - *Incluya conclusiones respecto de las tres perspectivas de análisis solicitadas. Puede agregar aportes de su parte, comentarios, opiniones, críticas, o si se quiere agregar algo más.* 
+
+    - Los dos compartimos el mismo pensamiento, el análisis de los lenguajes de programación es muy importante para el desarrollo de un programador, ya que le permite conocer las características de cada lenguaje y así poder elegir el más adecuado para cada proyecto.
+    Por otro lado nos sirvió mucho conocer a fondo python, ya que es un lenguaje con mucha demanda en el mercado laboral, con muchísimo potencial y que nos puede servir para el futuro.
+
