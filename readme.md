@@ -614,7 +614,7 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
             - Sequence(secuencia) - list, tuple, range
             - Mapping(Mapeo) - dict
             - Set(conjuntos) - set, frozenset
-            - Objets(objetos) - class
+            - Objects(objetos) - class
 
 - *Excepciones*
     - En terminología básica conocemos la estructura try/except. El código que puede causar una excepción se coloca en el bloque try y el manejo de la excepción se implementa en el bloque except. El código del bloque except solo se ejecutará si el bloque try se encuentra con una excepción.
