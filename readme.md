@@ -420,7 +420,7 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
 
         - El proceso que realiza cuando se ejecuta sobre cada una de las sentencias del programa es el siguiente:
 
-            ![Alt text](/screenshots/image.png)
+            ![Alt text](https://i.ibb.co/dts9BDS/image.png)
 
         - Sólo pasa por ciertas instrucciones, no por todas, según sea la ejecución. 
 
@@ -428,7 +428,7 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
         
         - La interpretación se realiza llamando a estos subprogramas en la secuencia adecuada hasta generar el resultado de la ejecución.
 
-            ![Alt text](/screenshots/image2.png)
+            ![Alt text](https://i.ibb.co/k6rHBGF/image2.png)
 
 
 - *Su semántica operacional*
