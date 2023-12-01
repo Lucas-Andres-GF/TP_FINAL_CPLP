@@ -363,7 +363,7 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
 
         - Un identificador de Python es un nombre utilizado para identificar una variable, función, clase, módulo u otro objeto. 
         
-        - Un identificador comienza con una letra de la A a la Z o de la a a la z o un guión bajo (_) seguido de cero o más letras, guiones bajos y dígitos (0 a 9).
+        - Un identificador comienza con una letra de la "A" a la Z o de la "a" a la "z" o un guión bajo (_) seguido de cero o más letras, guiones bajos y dígitos (0 a 9).
 
         - Python no permite caracteres de puntuación como @, $ y % dentro de los identificadores.
 
