@@ -451,6 +451,64 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
     - R-valor: La declaración e inicialización se hace en la misma linea, por lo tanto el r-valor es el valor que se le asigna a la variable.
 
 - *Pilas*
+    - ¿Qué es la pila?
+        - Rutinas con capacidad de llamarse a sí mismas (recursión directa) o de llamar a otra rutina en forma recursiva (recursión indirecta).
+        - Rutinas con la capacidad de devolver valores, es decir, funciones.
+
+    - C3 Funcionamiento:
+        - El registro de activación de cada unidad será de tamaño fijo y conocido, pero no se sabrá cuántas instancias de cada unidad se necesitarán durante la ejecución.
+        - Igual que en C2 el compilador puede ligar cada variable con su desplazamiento dentro del correspondiente registro de activación. El desplazamiento es estático.
+        - La dirección donde se cargará el registro de activación, es dinámica, por lo tanto, la ligadura con la direcciones absolutas en la zona de Datos de la memoria, solo puede
+        hacerse en ejecución.
+        - Cada nueva invocación aloca un nuevo registro de activación y se establecen las nuevas ligaduras entre el segmento. 
+
+    - C3 Funcionamiento:
+        - Ahora hay que tener en cuenta que:
+
+        - Las unidades pueden devolver valores (funciones) y esos valores NO deberían perderse cuando se desactiva la unidad... Pero también que..
+
+        - Cuando la instancia actual de la unidad termine de ejecutarse, su registro de activación no se necesitará más, por lo tanto se puede liberar el espacio ocupado por su registro de activación y dejar el espacio disponible para nuevos registros de activación.
+
+    - C3 Datos necesarios:
+    Para manejar la alocación dinámica necesitamos nuevos elementos:
+
+    - Como vimos se necesita el:
+        - Valor de retorno: Al terminar una rutina se desaloca su RA, por lo tanto la rutina llamante debe guardar en su RA el valor de retorno de la rutina llamada.
+        - Link dinámico: Contiene un puntero a la dirección base del registro de activación de la rutina llamadora
+        Pero además se necesita:
+        - Current: Dirección base del registro de activación de la unidad que se esté ejecutando actualmente.
+        Free: Próxima dirección libre en la pila
+
+        - Cadena dinámica: Cadena de links dinámicos originada en la secuencia de registros de activación activos.
+        Representa la secuencia dinámica de unidades activadas
+
+    - C4 Estructura de bloque:
+
+    - C4´
+    Permite que dentro de las sentencias compuestas aparezcan declaraciones locales. 
+
+    - C4´´ Permite la definición de una rutina dentro de otras rutinas. (anidamiento de rutinas)
+        - Estas características conforman el concepto de estructura de bloque:
+            - Controla el alcance de las variables,
+            - Define el tiempo de vida de las variables
+            - Divide el programa en unidades más pequeñas.
+
+        - Los bloques pueden ser:
+            - Disjuntos (No tiene porción común)
+            - Anidados (Un bloque está completamente contenido en otro) 
+
+    - C4’ Anidamiento vía sentencias compuestas:
+        - Un bloque tiene forma de una sentencia compuesta:
+        {<lista de declaraciones>;<lista de sentencias>}
+        - Las variables tienen alcance local: son visibles dentro de la sentencia compuesta, incluyendo cualquier sentencia compuesta anidada en ella.
+        - Si en el anidamiento, hay una nueva declaración de un nombre, la declaración interna enmascara la externa del mismo nombre. 
+
+    - C4’ Sentencias compuestas:
+        - Alocación: implementación
+
+        - Estático: Incluir las necesidades dentro del registro de activación de la unidad a la que pertenece. Simple y eficiente en tiempo.
+
+        - Dinámico: Alocar el espacio dinámicamente cuando se ejecutan las sentencias. Eficiente en espacio.
 
 - *Parámetros*
     
