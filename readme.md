@@ -151,7 +151,8 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
 
     - Eficiencia
         - Tiempo y espacio
-            - Python 
+            - Python es un lenguaje interpretado, por lo tanto es más lento que los lenguajes compilados, pero más rápido que otros lenguajes interpretados.
+            
 
 - *Paradigma o paradigmas que respeta.*
     Python es un lenguaje de programación multiparadigma, ya que soporta múltiples paradigmas de programación. 
