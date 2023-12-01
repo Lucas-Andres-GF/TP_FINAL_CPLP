@@ -719,7 +719,8 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
 
 
 ## Parte B: Respecto al análisis a realizar con IA. 
-- *Utilizar dos sistemas de Inteligencia artificial como ChatGPT, GoogleBard, Perplexity, etc y compare los resultados que dan estos motores respecto a lo indicado por Ud. sobre el lenguaje de programación que eligió. Es importante realizar este análisis comparativo entre lo inferido por la IA respecto a lo descripto en la bibliografía tanto de Conceptos de lenguajes como del manual mismo del lenguaje.*
+### Enunciado:
+*Utilizar dos sistemas de Inteligencia artificial como ChatGPT, GoogleBard, Perplexity, etc y compare los resultados que dan estos motores respecto a lo indicado por Ud. sobre el lenguaje de programación que eligió. Es importante realizar este análisis comparativo entre lo inferido por la IA respecto a lo descripto en la bibliografía tanto de Conceptos de lenguajes como del manual mismo del lenguaje.*
 
 |Tema |ChatGPT|GoogleBard| Perplexity|
 |:---:|:---:|:---:|:---:|
@@ -755,8 +756,8 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
  |
 
 ## Parte C: Conclusiones finales
-- *Incluya conclusiones respecto de las tres perspectivas de análisis solicitadas. Puede agregar aportes de su parte, comentarios, opiniones, críticas, o si se quiere agregar algo más.* 
+### Enunciado: 
+*Incluya conclusiones respecto de las tres perspectivas de análisis solicitadas. Puede agregar aportes de su parte, comentarios, opiniones, críticas, o si se quiere agregar algo más.* 
 
-    - Los dos compartimos el mismo pensamiento, el análisis de los lenguajes de programación es muy importante para el desarrollo de un programador, ya que le permite conocer las características de cada lenguaje y así poder elegir el más adecuado para cada proyecto.
-    Por otro lado nos sirvió mucho conocer a fondo python, ya que es un lenguaje con mucha demanda en el mercado laboral, con muchísimo potencial y que nos puede servir para el futuro.
+- Los dos compartimos el mismo pensamiento, el análisis de los lenguajes de programación es muy importante para el desarrollo de un programador, ya que le permite conocer las características de cada lenguaje y así poder elegir el más adecuado para cada proyecto.Por otro lado nos sirvió mucho conocer a fondo python, ya que es un lenguaje con mucha demanda en el mercado laboral, con muchísimo potencial y que nos puede servir para el futuro.
 
