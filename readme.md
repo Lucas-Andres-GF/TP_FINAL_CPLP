@@ -4,6 +4,11 @@
 
 ----
 
+<h4> Banega Luis Emanuel </h4>
+<h4> Gallardo Florido Lucas Andrés</h4>
+
+----
+
 ### Requisitos: 
 - *Este trabajo final es obligatorio para aquellos que quieren promocionar. Puede realizarse en grupos de hasta 2 personas.*
 
