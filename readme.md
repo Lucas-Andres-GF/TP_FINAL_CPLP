@@ -714,10 +714,10 @@ Python es un ejemplo de FLOSS (software gratuito y de código abierto). En térm
                 print(type(ex))
                 print("parametro1 =", p1)
                 print("parametro2 =", p2)
-            
             #<class '__main__.MiExcepcionPersonalizada'>
             #parametro1 = ValorPar1
             #parametro2 = ValorPar2
+            #print('parametros {}'.format(list(map (lambda x: x, ex.args))))
             ```
 
 ---- 
